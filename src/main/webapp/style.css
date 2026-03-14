@@ -1,0 +1,236 @@
+/* reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* fondo oscuro */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    min-height:100vh;
+
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* contenedor principal */
+.panel{
+    width:90%;
+    max-width:520px;
+
+    padding:40px;
+
+    background:rgba(0,0,0,0.65);
+
+    border-radius:12px;
+
+    box-shadow:0 10px 40px rgba(0,0,0,0.8);
+
+    color:white;
+
+    animation:entrada 0.7s ease;
+}
+/* titulo */
+h1{
+    text-align:center;
+    margin-bottom:25px;
+    letter-spacing:1px;
+}
+
+/* formulario cambiado */
+.formulario{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+/* etiquetas */
+label{
+    font-size:14px;
+    opacity:0.9;
+}
+
+/* inputs */
+input,select{
+    padding:12px;
+    border:none;
+
+    border-radius:8px;
+
+    background:#1e2a33;
+
+    color:white;
+
+    transition:0.3s;
+}
+
+/* focus inputs */
+input:focus,select:focus{
+    outline:none;
+    background:#2a3a45;
+}
+
+/* botón principal */
+.btn-crear{
+    margin-top:10px;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#ff7b00;
+
+    color:white;
+
+    font-size:15px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.btn-crear:hover{
+    background:#ff9500;
+}
+
+/* sección botones */
+.bloque-lista{
+    margin-top:20px;
+
+    display:flex;
+    flex-direction:column;
+
+    gap:12px;
+
+    align-items:center;
+}
+
+/* botón lista */
+.btn-ver{
+    width:200px;
+
+    text-align:center;
+
+    padding:10px;
+
+    border-radius:8px;
+
+    background:#009688;
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:0.3s;
+}
+
+.btn-ver:hover{
+    background:#00796b;
+}
+
+/* botones confirmación vertical */
+.grupo-botones{
+    margin-top:25px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+    align-items:center;
+}
+
+/* tabla contenedor */
+.panel-tabla{
+    width:95%;
+
+    max-width:1000px;
+
+    padding:40px;
+
+    background:rgba(0,0,0,0.65);
+
+    border-radius:12px;
+
+    color:white;
+
+    box-shadow:0 10px 40px rgba(0,0,0,0.8);
+
+    animation:entrada 0.7s ease;
+}
+
+/* tabla */
+.tabla-datos{
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:20px;
+}
+
+.tabla-datos th{
+    background:#1e2a33;
+
+    padding:12px;
+}
+
+.tabla-datos td{
+    padding:12px;
+
+    border-bottom:1px solid rgba(255,255,255,0.1);
+
+    text-align:center;
+}
+
+.tabla-datos tr:hover{
+    background:rgba(255,255,255,0.05);
+}
+
+/* eliminar */
+.btn-borrar{
+    background:#e53935;
+
+    padding:6px 12px;
+
+    border-radius:6px;
+
+    text-decoration:none;
+
+    color:white;
+
+    transition:0.3s;
+}
+
+.btn-borrar:hover{
+    background:#c62828;
+}
+
+/* botón volver */
+.btn-regresar{
+    margin-top:25px;
+
+    width:180px;
+
+    text-align:center;
+
+    padding:10px;
+
+    border-radius:8px;
+
+    background:#546e7a;
+
+    color:white;
+
+    text-decoration:none;
+}
+
+.btn-regresar:hover{
+    background:#37474f;
+}
